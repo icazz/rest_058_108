@@ -1,0 +1,212 @@
+{
+    "info": {
+        "name": "rest_058_108",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET Semua Produk",
+            "description": "Ambil Semua Data Produk",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/produk",
+                    "path": [
+                        "produk"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "GET Produk by ID",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/produk/:id",
+                    "path": [
+                        "produk",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "POST Tambah Produk",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n  \"nama\": \"Keyboard Mekanik\",\r\n  \"harga\": 750000\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/produk",
+                    "path": [
+                        "produk"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "PUT Update Produk",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "PUT",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n  \"nama\": \"Mouse Wireless\",\r\n  \"harga\": 250000\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/produk/2",
+                    "path": [
+                        "produk",
+                        "2"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "DELETE Hapus Produk",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "DELETE",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/produk/:id",
+                    "path": [
+                        "produk",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "1",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "GET Semua Produk setelah DELETE",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/produk",
+                    "path": [
+                        "produk"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        }
+    ],
+    "variable": [],
+    "event": [],
+    "auth": {}
+}
